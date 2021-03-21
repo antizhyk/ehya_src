@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../E-Shop/E-shop"
+		},
+		{
+			"path": "../../../../../Шаблоны/ex_sh"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bootstrap"
+	}
+}
