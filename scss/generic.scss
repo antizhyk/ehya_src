@@ -1,0 +1,61 @@
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    border: 2px solid rgb(21, 101, 216);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: rgb(21, 101, 216);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    height: 48px;
+    line-height: 22px;
+    @media (min-width: 992px) {
+        &:hover {
+        }
+    }
+    &._fw {
+        width: 100%;
+    }
+}
+//</BUTTONS>====================================================================================================
+//<CARD>====================================================================================================
+.card {
+    display: inline-grid;
+    grid-template-columns: 40px auto;
+    margin-bottom: 15px;
+    grid-column-gap: 12px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__picture {
+    }
+
+    &__icon {
+        svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    &__block {
+    }
+
+    &__title {
+        font-family: $sans;
+        line-height: 22px;
+        font-weight: 600;
+        color: #183b56;
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #5a7184;
+        font-family: $sans;
+    }
+}
+//</CARD>====================================================================================================
