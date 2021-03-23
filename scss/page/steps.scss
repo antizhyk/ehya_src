@@ -3,15 +3,28 @@
     }
 
     &__bottom {
+        @media (min-width: $md2+px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 
     &__content {
+        flex: 0 0 100%;
     }
 
     &__container {
+        position: relative;
     }
 
     &__body {
+        @media (min-width: $md2+px) {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 85px;
+            max-width: 487px;
+        }
     }
 
     &__list {
@@ -24,9 +37,34 @@
     }
 
     &__btn {
+        display: inline-flex;
+        width: auto;
+        padding: 0 49px 0 27px;
+        position: relative;
+        margin-left: 66px;
+        &::before {
+            content: "";
+            height: 14px;
+            width: 18px;
+            background: url("../img/order/Icon.svg") center/ contain no-repeat;
+            position: absolute;
+            right: 29px;
+            top: calc(50%-18px);
+        }
     }
 
     &__image {
+        @media (min-width: $md2+px) {
+            flex: 0 0 50%;
+            transform: translateX(100%);
+            display: flex;
+            justify-content: flex-end;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
     }
 }
 .top {

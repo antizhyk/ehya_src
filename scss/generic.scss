@@ -127,19 +127,64 @@
 }
 .steps {
     .card {
+        margin-bottom: 48px;
+        align-items: stretch;
+        column-gap: 24px;
         &__picture {
+            justify-self: center;
+            position: relative;
+            &::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                //background-color: #e6e8ec;
+                position: absolute;
+                left: -50%;
+                top: -6%;
+                z-index: 1;
+                transform: translateX(-50%);
+                border: 1px solid #d6e4f8;
+            }
         }
 
         &__icon {
+            position: absolute;
+            z-index: 20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: HKGrotesk;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            color: #ffff;
+            background-color: #2c74dc;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, 0);
+            filter: drop-shadow(0px 10px 15px rgba(21, 37, 71, 0.15));
         }
 
         &__block {
         }
 
         &__title {
+            font-family: HKGrotesk;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: 0.2px;
+            color: #183b56;
         }
 
         &__text {
+            font-size: 18px;
+            line-height: 32px;
+            color: #5a7184;
         }
     }
 }
