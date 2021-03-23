@@ -1,0 +1,28 @@
+.review {
+    margin-bottom: 200px;
+    &__container {
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+        align-items: center;
+    }
+
+    &__quote {
+        padding: 0 15px;
+    }
+
+    &__image {
+        height: 460px;
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 460px;
+        object-position: center;
+        object-fit: contain;
+    }
+}
