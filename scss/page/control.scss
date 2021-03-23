@@ -109,9 +109,27 @@
     }
 
     &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__item {
+        line-height: 22px;
+        color: #183b56;
+        margin-bottom: 25px;
+        padding-left: 36px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: url("../../img/control/checkmark-green.svg") center/ contain no-repeat;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 .show__title,
