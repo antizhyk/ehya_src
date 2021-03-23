@@ -1,0 +1,85 @@
+.control {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+        &_show {
+        }
+
+        &_payments {
+        }
+    }
+}
+
+.show {
+    &__block {
+        padding: 0 15px 0 0;
+        flex: 0 0 50%;
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__row {
+    }
+
+    &__play {
+    }
+
+    &__item {
+    }
+
+    &__subtitle {
+    }
+
+    &__link {
+    }
+
+    &__picture {
+        padding: 0 0 0 15px;
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 360px;
+    }
+}
+.payments {
+    &__picture {
+        padding: 0 0 0 15px;
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 360px;
+    }
+
+    &__block {
+        padding: 0 15px 0 0;
+        flex: 0 0 50%;
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+}

@@ -222,6 +222,7 @@
         color: #183b56;
     }
 }
+.control,
 .steps {
     .heading {
         text-align: center;
@@ -240,6 +241,11 @@
             line-height: 32px;
             color: #5a7184;
         }
+    }
+}
+.control {
+    .heading {
+        margin-bottom: 126px;
     }
 }
 //</HEADING>====================================================================================================
