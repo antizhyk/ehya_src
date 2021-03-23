@@ -245,14 +245,17 @@
 //</HEADING>====================================================================================================
 //<QUOTE>====================================================================================================
 .quote {
+    @media (max-width: $md2+px) {
+        text-align: center;
+    }
     &__incommas {
         margin-bottom: 18px;
     }
 
     &__text {
         font-family: HKGrotesk;
-        font-size: 40px;
-        line-height: 60px;
+        @include adaptiv-value("font-size", 40, 28, 1);
+        @include adaptiv-value("line-height", 60, 40, 1);
         letter-spacing: 0.1px;
         color: #183b56;
         margin-bottom: 16px;
