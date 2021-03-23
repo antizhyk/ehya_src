@@ -3,11 +3,24 @@
     }
 
     &__row {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 -15px;
+        position: relative;
+        padding-left: 360px;
     }
 
     &__heading {
+        flex: 0 0 30%;
+        padding: 0 15px;
+        position: absolute;
+        top: -59px;
+        left: 0;
+        width: 360px;
     }
 
     &__card {
+        flex: 0 1 50%;
+        padding: 0 15px;
     }
 }
