@@ -1,5 +1,13 @@
 .offer {
+    margin-bottom: 144px;
+    @media (max-width: $md2+px) {
+        margin-bottom: 44px;
+    }
+    @media (max-width: $md4+px) {
+        margin-bottom: 30px;
+    }
     &__container {
+        border-bottom: 1px solid #e5eaf4;
     }
 
     &__row {
@@ -8,19 +16,35 @@
         margin: 0 -15px;
         position: relative;
         padding-left: 360px;
+        @media (max-width: $md2+px) {
+            padding-left: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__heading {
-        flex: 0 0 30%;
+        flex: 0 0 100%;
         padding: 0 15px;
         position: absolute;
         top: -59px;
         left: 0;
         width: 360px;
+        @media (max-width: $md2+px) {
+            position: static;
+            text-align: center;
+            margin-bottom: 56px;
+        }
+        @media (max-width: $md3+px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__card {
         flex: 0 1 50%;
         padding: 0 15px;
+        @media (max-width: 500px) {
+            flex: 0 1 100%;
+        }
     }
 }
