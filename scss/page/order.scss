@@ -1,12 +1,16 @@
 .order {
-    height: 100vh;
-    max-height: 560px;
+    height: 560px;
     position: relative;
     padding: 48px 0;
     margin-bottom: 144px;
+    @media (max-width: $md2+px) {
+        height: 587px;
+        margin-bottom: 406px;
+    }
     &__container {
         position: relative;
         z-index: 2;
+        padding: 0 24px !important;
         height: 100%;
     }
 
@@ -16,10 +20,24 @@
         display: flex;
         align-items: flex-end;
         position: relative;
+        @media (max-width: $md2+px) {
+            align-items: flex-start;
+            margin-top: 38px;
+        }
     }
     &__ad {
         color: #fff;
         width: 590px;
+        @media (max-width: $md1+px) {
+            width: 480px;
+        }
+        @media (max-width: $md2+px) {
+            text-align: center;
+            width: 100%;
+        }
+        @media (max-width: $md4+px) {
+            text-align: left;
+        }
     }
 
     &__title {
@@ -39,10 +57,19 @@
 
     &__btn {
         margin-bottom: 120px;
+        @media (max-width: $md2+px) {
+            margin-bottom: 78px;
+        }
     }
 
     &__list {
         display: flex;
+        @media (max-width: $md2+px) {
+            justify-content: center;
+        }
+        @media (max-width: $md4+px) {
+            display: none;
+        }
     }
 
     &__item {
@@ -68,6 +95,11 @@
         position: absolute;
         top: 26%;
         right: 0;
+        @media (max-width: $md2+px) {
+            right: 50%;
+            transform: translateX(50%);
+            top: 78%;
+        }
     }
 
     &__bg {
@@ -92,6 +124,9 @@
     box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
     border-radius: 8px;
     padding: 32px;
+    @media (max-width: $md4+px) {
+        width: 95vw;
+    }
     &__title {
         font-family: HKGrotesk;
         font-weight: 700;
@@ -106,6 +141,9 @@
         line-height: 22px;
         color: #5a7184;
         margin-bottom: 24px;
+        @media (max-width: $md4+px) {
+            margin-bottom: 12px;
+        }
     }
     &__input {
         position: relative;
@@ -136,11 +174,20 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
     &__select {
+        @media (max-width: $md3+px) {
+            width: 100%;
+        }
         &_one {
             margin-right: 16px;
             flex: 0 0 60%;
+            @media (max-width: $md3+px) {
+                margin-bottom: 12px;
+            }
         }
         &_two {
             flex: 0 0 36%;
