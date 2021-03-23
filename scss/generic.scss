@@ -82,4 +82,72 @@
         font-family: $sans;
     }
 }
+.offer__row {
+    .card {
+        grid-column-gap: 24px;
+        @media (max-width: $md2+px) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        @media (max-width: 500px) {
+            margin-bottom: 40px;
+        }
+        &__picture {
+            &_f {
+                margin-bottom: -7px;
+                @media (max-width: 500px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__icon {
+            svg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &__block {
+            @media (max-width: $md2+px) {
+                text-align: center;
+            }
+        }
+
+        &__title {
+            margin-bottom: 8px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 32px;
+            color: #5a7184;
+        }
+    }
+}
 //</CARD>====================================================================================================
+//<HEADING>====================================================================================================
+.heading {
+    &__subtitle {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #36b37e;
+        background-color: #ebf7f2;
+        padding: 6px 16px;
+        border-radius: 25px;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-family: HKGrotesk;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.2px;
+        color: #183b56;
+    }
+}
+//</HEADING>====================================================================================================

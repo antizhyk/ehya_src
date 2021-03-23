@@ -5,7 +5,10 @@
     margin-bottom: 144px;
     @media (max-width: $md2+px) {
         height: 587px;
-        margin-bottom: 406px;
+        margin-bottom: 430px;
+    }
+    @media (max-width: $md3+px) {
+        padding: 10px;
     }
     &__container {
         position: relative;
