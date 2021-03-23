@@ -22,7 +22,7 @@ $fontFamily: OpenSans sans-serif;
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 950;
+$maxWidthContainer: 1140;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -65,7 +65,7 @@ body {
 		max-width: 970px;
 	}
 	@media (max-width: $md2+px) {
-		max-width: 750px;
+		max-width: 750px !important;
 	}
 	@media (max-width: $md3+px) {
 		max-width: none;
@@ -83,6 +83,7 @@ body {
 //@import "datepicker";
 //@import "lightgallery";
 //@import "pagging";
+@import "navigation";
 @import "generic";
 @import "popup";
 @import "header";
