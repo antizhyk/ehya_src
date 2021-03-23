@@ -27,6 +27,9 @@
     grid-template-columns: 40px auto;
     margin-bottom: 15px;
     grid-column-gap: 12px;
+    @media (max-width: $md3+px) {
+        display: grid;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -44,6 +47,7 @@
     }
 
     &__title {
+        font-size: 1rem;
         font-family: $sans;
         line-height: 22px;
         font-weight: 600;
