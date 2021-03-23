@@ -222,6 +222,7 @@
         color: #183b56;
     }
 }
+.control,
 .steps {
     .heading {
         text-align: center;
@@ -233,13 +234,32 @@
 
         &__title {
             margin-bottom: 16px;
+            font-family: HKGrotesk;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: 0.2px;
+            color: #183b56;
+            @media (max-width: $md3+px) {
+                font-size: 28px;
+                line-height: 36px;
+            }
         }
 
         &__text {
             font-size: 18px;
             line-height: 32px;
             color: #5a7184;
+            @media (max-width: $md3+px) {
+                font-size: 16px;
+                line-height: 28px;
+            }
         }
+    }
+}
+.control {
+    .heading {
+        margin-bottom: 126px;
     }
 }
 //</HEADING>====================================================================================================
