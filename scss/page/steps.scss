@@ -1,4 +1,8 @@
 .steps {
+    margin-bottom: 94px;
+    @media (max-width: $md3+px) {
+        margin-bottom: 30px;
+    }
     &__top {
     }
 
@@ -25,6 +29,12 @@
             top: 85px;
             max-width: 487px;
         }
+        @media (max-width: $md1+px) {
+            max-width: 437px;
+        }
+        @media (max-width: $md2+px) {
+            max-width: 100%;
+        }
     }
 
     &__list {
@@ -34,6 +44,10 @@
     }
 
     &__button {
+        @media (max-width: $md2+px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__btn {
@@ -42,6 +56,9 @@
         padding: 0 49px 0 27px;
         position: relative;
         margin-left: 66px;
+        @media (max-width: $md2+px) {
+            margin-left: 0;
+        }
         &::before {
             content: "";
             height: 14px;
@@ -54,11 +71,20 @@
     }
 
     &__image {
+        display: none;
         @media (min-width: $md2+px) {
             flex: 0 0 50%;
             transform: translateX(100%);
             display: flex;
             justify-content: flex-end;
+            display: block;
+        }
+        &_m {
+            display: block;
+            margin-bottom: 48px;
+            @media (min-width: $md2+px) {
+                display: none;
+            }
         }
         img {
             width: 100%;
