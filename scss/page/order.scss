@@ -1,38 +1,84 @@
 .order {
+    height: 100vh;
+    max-height: 560px;
+    position: relative;
+    padding: 48px 0;
+    margin-bottom: 144px;
     &__container {
+        position: relative;
+        z-index: 2;
+        height: 100%;
     }
 
+    &__wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
     &__ad {
+        color: #fff;
+        width: 590px;
     }
 
     &__title {
+        font-family: HKGrotesk;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.2px;
+        margin-bottom: 12px;
     }
 
     &__text {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 32px;
     }
 
     &__btn {
+        margin-bottom: 120px;
     }
 
     &__list {
+        display: flex;
     }
 
     &__item {
+        margin-right: 16px;
+        padding-left: 32px;
+        position: relative;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url("../img/order/checkmark-green.svg") center/ contain no-repeat;
+            width: 24px;
+            height: 24px;
+        }
     }
 
     &__form {
+        position: absolute;
+        top: 26%;
+        right: 0;
     }
 
     &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
     }
 }
-. {
-    &_container {
-    }
 
-    &_ibg {
-    }
-}
 .btn {
     &_w {
     }
@@ -41,28 +87,110 @@
     }
 }
 .form-order {
+    width: 456px;
+    background-color: #fff;
+    box-shadow: 0px 15px 50px rgba(21, 37, 72, 0.1);
+    border-radius: 8px;
+    padding: 32px;
     &__title {
+        font-family: HKGrotesk;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        color: #183b56;
+        margin-bottom: 8px;
     }
 
     &__text {
+        line-height: 22px;
+        color: #5a7184;
+        margin-bottom: 24px;
     }
-
+    &__input {
+        position: relative;
+        margin-bottom: 16px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 18px;
+            width: 12px;
+            background: url("../img/order/loc.svg") center/ contain no-repeat;
+        }
+    }
     &__location {
+        background: #ffffff;
+        border: 1px solid #c3cad9;
+        border-radius: 8px;
+        width: 100%;
+        height: 48px;
+        padding: 13px 13px 13px 48px;
+        font-weight: 600;
+        line-height: 22px;
     }
 
     &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__select {
+        &_one {
+            margin-right: 16px;
+            flex: 0 0 60%;
+        }
+        &_two {
+            flex: 0 0 36%;
+        }
+        .select {
+            &__title {
+                border: 1px solid #c3cad9;
+                border-radius: 8px;
+            }
+            &__value {
+                height: 44px;
+                font-weight: 600;
+                line-height: 22px;
+                font-size: 16px;
+                color: #183b56;
+                span {
+                    height: 22px;
+                }
+                &::before {
+                    background-image: url(../../img/header/arrow.svg);
+                }
+            }
+            &__options {
+                top: 35px;
+            }
+            &__option {
+                font-weight: 400;
+                line-height: 22px;
+                font-size: 16px;
+                color: #183b56;
+            }
+        }
     }
 
     &__subtitle {
+        font-weight: 600;
+        line-height: 22px;
+        color: #5a7184;
+        margin-bottom: 8px;
     }
 
     &__price {
+        font-family: HKGrotesk;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 55px;
+        color: #183b56;
+        margin-bottom: 22px;
     }
 
     &__btn {
     }
-}
-.places {
-}
-.guests {
 }

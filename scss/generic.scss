@@ -19,6 +19,26 @@
     &._fw {
         width: 100%;
     }
+    &_w {
+        border: 2px solid #fff;
+        color: #fff;
+        position: relative;
+        padding: 0 49px 0 27px;
+        &::before {
+            content: "";
+            height: 14px;
+            width: 18px;
+            background: url("../img/order/Icon.svg") center/ contain no-repeat;
+            position: absolute;
+            right: 29px;
+            top: calc(50%-18px);
+        }
+    }
+    &_fill-blue {
+        width: 100%;
+        color: #fff;
+        background: #1565d8;
+    }
 }
 //</BUTTONS>====================================================================================================
 //<CARD>====================================================================================================
