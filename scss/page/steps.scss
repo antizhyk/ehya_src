@@ -1,0 +1,104 @@
+.steps {
+    margin-bottom: 94px;
+    @media (max-width: $md3+px) {
+        margin-bottom: 30px;
+    }
+    &__top {
+    }
+
+    &__bottom {
+        @media (min-width: $md2+px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__content {
+        flex: 0 0 100%;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        @media (min-width: $md2+px) {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 85px;
+            max-width: 487px;
+        }
+        @media (max-width: $md1+px) {
+            max-width: 437px;
+        }
+        @media (max-width: $md2+px) {
+            max-width: 100%;
+        }
+    }
+
+    &__list {
+    }
+
+    &__card {
+    }
+
+    &__button {
+        @media (max-width: $md2+px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__btn {
+        display: inline-flex;
+        width: auto;
+        padding: 0 49px 0 27px;
+        position: relative;
+        margin-left: 66px;
+        @media (max-width: $md2+px) {
+            margin-left: 0;
+        }
+        &::before {
+            content: "";
+            height: 14px;
+            width: 18px;
+            background: url("../img/order/Icon.svg") center/ contain no-repeat;
+            position: absolute;
+            right: 29px;
+            top: calc(50%-18px);
+        }
+    }
+
+    &__image {
+        display: none;
+        @media (min-width: $md2+px) {
+            flex: 0 0 50%;
+            transform: translateX(100%);
+            display: flex;
+            justify-content: flex-end;
+            display: block;
+        }
+        &_m {
+            display: block;
+            margin-bottom: 48px;
+            @media (min-width: $md2+px) {
+                display: none;
+            }
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+    }
+}
+.top {
+    &__heading {
+    }
+}
+
+.btn {
+    &_fill-blue {
+    }
+}
