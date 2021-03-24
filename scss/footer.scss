@@ -1,5 +1,93 @@
-footer{}
 //====================================================================================================
+.footer {
+    padding: 128px 0 80px;
+    &__conteiner {
+    }
+
+    &__top {
+        display: flex;
+    }
+
+    &__info {
+        width: 263px;
+        margin-right: 29px;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        line-height: 28px;
+        color: #5a7184;
+        margin-bottom: 32px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social {
+        margin-right: 6px;
+    }
+
+    &__row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        grid-column-gap: 30px;
+    }
+
+    &__item {
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #183b56;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        li {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__link {
+        line-height: 22px;
+        color: #183b56;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        margin-top: 96px;
+    }
+
+    &__hearth {
+        display: inline-block;
+        margin-bottom: 24px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__license {
+        font-weight: 600;
+        line-height: 22px;
+        text-align: center;
+    }
+}
 
 //====================================================================================================
-
