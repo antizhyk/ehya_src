@@ -40,6 +40,9 @@
 		&:hover {
 			color: #1565d8 !important;
 			background-color: transparent;
+			span {
+				background: url(../img/header/arrow_b.svg) center/ contain no-repeat;
+			}
 		}
 	}
 
